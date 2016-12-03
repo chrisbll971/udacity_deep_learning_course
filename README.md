@@ -12,14 +12,14 @@ The AMI has GPU Configured TensorFlow, PyCharm, Website accessible Jupyter Noteb
 
 Enter the following in Advanced Details -> User Data during Step 3 Configure Instance when launching an EC2 server.
 
-'''
+```
 #!/bin/bash
 echo "ubuntu:password" | chpasswd
 cd /home/ubuntu/jupyter
 git clone https://github.com/chrisbll971/udacity_deep_learning_course.git
 chown -R ubuntu:ubuntu /home/ubuntu/jupyter/udacity_deep_learning_course
 jupyter notebook --certfile=/home/ubuntu/certs/mycert.pem --no-browser --ip="*" > /tmp/ipynb.out 2>&1 &
-'''
+```
 
 This will make the Jupyter notebook accessible via web at https://ec2instanceip:8888/tree automatically on launch. It will also make the instance open to Windows Remote Desktop. The first time you login via Windows Remote Desktop it will fail, but the second time it will work.
 
