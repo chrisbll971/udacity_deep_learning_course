@@ -4,7 +4,7 @@ Assignment Solutions for the Udacity Deep Learning class with TensorFlow
 Course information can be found at https://www.udacity.com/course/deep-learning--ud730
 
 ##AWS Instance Setup
-I setup a Public AMI on Amazon AWS that I used for the tutorial.
+I setup a Public AMI on Amazon AWS to work through the tutorial.  
 * AMI Name: DeepMind DeepQ Atari 11_25
 * Instance Type: g2.2xlarge
 * Software: GPU Configured TensorFlow, PyCharm, Website accessible Jupyter Notebook, CUDA Toolkit 8, OpenCV, Git, and Python
